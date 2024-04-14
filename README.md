@@ -54,12 +54,12 @@ You can deploy your own bot, or use mine: [@chatgpt_karfly_bot](https://t.me/cha
 - *15 Nov 2023*: Added support of [GPT-4 Turbo](https://help.openai.com/en/articles/8555510-gpt-4-turbo)
 
 ## Bot commands
-- `/retry` – Regenerate last bot answer
-- `/new` – Start new dialog
-- `/mode` – Select chat mode
-- `/balance` – Show balance
-- `/settings` – Show settings
-- `/help` – Show help
+- `/retry` – Повторить запрос
+- `/new` – Новый диалог
+- `/mode` – Сменить режим
+- `/balance` – Баланс
+- `/settings` – Настройки
+- `/help` – Помощь
 
 ## Setup
 1. Get your [OpenAI API](https://openai.com/api/) key
