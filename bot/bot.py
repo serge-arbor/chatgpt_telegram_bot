@@ -504,6 +504,12 @@ async def set_chat_mode_handle(update: Update, context: CallbackContext):
 
 def get_settings_menu(user_id: int):
     current_model = db.get_user_attribute(user_id, "current_model")
+
+    # Check if the current model is still supported; if not, select the first one from the list of available models
+    if current_model not in config.models["available_text_models"]:
+        current_model = config.models["available_text_models"][0]  # Take the first available model
+
+    # Now fetch the description of the current or default model
     text = config.models["info"][current_model]["description"]
 
     text += "\n\n"
@@ -513,13 +519,12 @@ def get_settings_menu(user_id: int):
 
     text += "\nSelect <b>model</b>:"
 
-    # buttons to choose models
+    # Generate buttons for model selection
     buttons = []
     for model_key in config.models["available_text_models"]:
         title = config.models["info"][model_key]["name"]
         if model_key == current_model:
             title = "✅ " + title
-
         buttons.append(
             InlineKeyboardButton(title, callback_data=f"set_settings|{model_key}")
         )

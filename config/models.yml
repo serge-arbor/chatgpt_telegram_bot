@@ -1,6 +1,19 @@
-available_text_models: ["gpt-4-1106-preview", "gpt-4"]
+available_text_models: ["gpt-4-turbo-2024-04-09", "gpt-4", "gpt-3.5-turbo"]
 
 info:
+  gpt-4-turbo-2024-04-09:
+    type: chat_completion
+    name: GPT-4 Turbo
+    description: GPT-4 Turbo is a <b>faster</b> and <b>cheaper</b> version of GPT-4. It's as smart as GPT-4, so you should use it instead of GPT-4.
+
+    price_per_1000_input_tokens: 0.01
+    price_per_1000_output_tokens: 0.03
+
+    scores:
+      smart: 5
+      fast: 4
+      cheap: 3
+
   gpt-4:
     type: chat_completion
     name: GPT-4
@@ -13,16 +26,16 @@ info:
       Smart: 5
       Fast: 2
       Cheap: 2
-
-  gpt-4-1106-preview:
+  
+  gpt-3.5-turbo:
     type: chat_completion
-    name: GPT-4 Turbo
-    description: GPT-4 Turbo is a <b>faster</b> and <b>cheaper</b> version of GPT-4. It's as smart as GPT-4, so you should use it instead of GPT-4.
+    name: ChatGPT 3.5
+    description: ChatGPT 3.5 is that well-known model. It's <b>fast</b> and <b>cheap</b>. Ideal for everyday tasks. If there are some tasks it can't handle, try the <b>GPT-4</b>.
 
-    price_per_1000_input_tokens: 0.01
-    price_per_1000_output_tokens: 0.03
+    price_per_1000_input_tokens: 0.0015
+    price_per_1000_output_tokens: 0.002
 
     scores:
-      smart: 5
-      fast: 4
-      cheap: 3
+      Smart: 3
+      Fast: 5
+      Cheap: 5
