@@ -41,12 +41,12 @@ user_semaphores = {}
 user_tasks = {}
 
 HELP_MESSAGE = """Commands:
-⚪ /retry – Regenerate last bot answer
-⚪ /new – Start new dialog
-⚪ /mode – Select chat mode
-⚪ /settings – Show settings
-⚪ /balance – Show balance
-⚪ /help – Show help
+⚪ /retry – Повторить запрос
+⚪ /new – Новый диалог
+⚪ /mode – Режим
+⚪ /settings – Настройки
+⚪ /balance – Баланс
+⚪ /help – Помощь
 
 🎨 Generate images from text prompts in <b>👩‍🎨 Artist</b> /mode
 👥 Add bot to <b>group chat</b>: /help_group_chat
@@ -810,12 +810,12 @@ async def error_handle(update: Update, context: CallbackContext) -> None:
 
 async def post_init(application: Application):
     await application.bot.set_my_commands([
-        BotCommand("/new", "Start new dialog"),
-        BotCommand("/mode", "Select chat mode"),
-        BotCommand("/retry", "Re-generate response for previous query"),
-        BotCommand("/balance", "Show balance"),
-        BotCommand("/settings", "Show settings"),
-        BotCommand("/help", "Show help message"),
+        BotCommand("/new", "Новый диалог"),
+        BotCommand("/mode", "Сменить режим"),
+        BotCommand("/retry", "Повторить запрос"),
+        BotCommand("/balance", "Показать баланс"),
+        BotCommand("/settings", "Настройки"),
+        BotCommand("/help", "Помощь"),
     ])
 
 def run_bot() -> None:

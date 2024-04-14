@@ -53,12 +53,12 @@ You can deploy your own bot, or use mine: [@chatgpt_karfly_bot](https://t.me/cha
 - *2 Apt 2024*: Added [GPT-4 Vision](https://platform.openai.com/docs/guides/vision) support
 
 ## Bot commands
-- `/retry` – Regenerate last bot answer
-- `/new` – Start new dialog
-- `/mode` – Select chat mode
-- `/balance` – Show balance
-- `/settings` – Show settings
-- `/help` – Show help
+- `/retry` – Повторить запрос
+- `/new` – Новый диалог
+- `/mode` – Сменить режим
+- `/balance` – Баланс
+- `/settings` – Настройки
+- `/help` – Помощь
 
 ## Setup
 1. Get your [OpenAI API](https://openai.com/api/) key
